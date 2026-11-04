@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 420" role="img" aria-labelledby="t d">
+<title id="t">Software engineering and knowledge graph workspace</title><desc id="d">An abstract laptop with code and connected knowledge graph nodes.</desc>
+<defs><linearGradient id="screen" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#1e3756"/><stop offset="1" stop-color="#0d1d35"/></linearGradient><linearGradient id="accent" x1="0" x2="1"><stop stop-color="#2d83e8"/><stop offset="1" stop-color="#49d3c1"/></linearGradient></defs>
+<ellipse cx="310" cy="359" rx="238" ry="30" fill="#3d92ca" opacity=".12"/>
+<g opacity=".65" stroke="#5dbdd7" stroke-width="2" fill="none"><path d="M369 83L439 40 507 82 482 148 397 165 369 83Z"/><path d="M439 40L482 148M507 82L397 165"/></g>
+<g fill="#69d7cf" stroke="#e2ffff" stroke-width="2"><circle cx="369" cy="83" r="8"/><circle cx="439" cy="40" r="9"/><circle cx="507" cy="82" r="8"/><circle cx="482" cy="148" r="11"/><circle cx="397" cy="165" r="8"/></g>
+<g><rect x="112" y="93" width="325" height="226" rx="16" fill="#1c2d44" stroke="#647f9c" stroke-width="5"/><rect x="126" y="108" width="297" height="194" rx="8" fill="url(#screen)"/><circle cx="144" cy="124" r="4" fill="#ee8d92"/><circle cx="159" cy="124" r="4" fill="#f1d27a"/><circle cx="174" cy="124" r="4" fill="#64d1ac"/>
+<g stroke-linecap="round" stroke-width="6"><path d="M153 157h86" stroke="#59b0e5"/><path d="M153 177h122" stroke="#64d1c8"/><path d="M173 197h162" stroke="#8696f4"/><path d="M173 217h107" stroke="#59b0e5"/><path d="M153 239h151" stroke="#d6a56f"/><path d="M173 259h82" stroke="#64d1c8"/></g>
+<path d="M80 321h391l40 24c6 4 3 11-6 11H56c-10 0-13-7-6-11z" fill="#aac1d8" stroke="#657c94" stroke-width="3"/><path d="M235 321h78l13 15H220z" fill="#647f99" opacity=".65"/></g>
+<g><rect x="435" y="210" width="115" height="93" rx="15" fill="#f4fafb" stroke="#b4cfde" stroke-width="2"/><path d="M456 252l20-22 28 20-20 26z" fill="#56b1ec"/><path d="M505 229l28 26-28 23-28-26z" fill="#36c4b9" opacity=".9"/></g>
+<g><rect x="52" y="177" width="89" height="65" rx="12" fill="#eaf5fa" stroke="#b4cfde" stroke-width="2"/><path d="M72 222v-27l20 13 23-24" stroke="#328be0" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"/><circle cx="116" cy="185" r="6" fill="#38c5b8"/></g>
+<g><rect x="468" y="320" width="82" height="33" rx="7" fill="#f5fbfb" stroke="#a6c4d7"/><path d="M485 336h50" stroke="#3abda9" stroke-width="5" stroke-linecap="round"/></g>
+</svg>
