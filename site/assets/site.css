@@ -111,3 +111,7 @@
 @media(max-width:740px){.nav .nav-mobile-contact{display:block;color:var(--accent);font-weight:750}.ask-fab{position:static;float:right;margin:0 14px 16px 0;box-shadow:none}.ask-panel{bottom:76px;right:14px}.feature-card{min-height:170px}}
 /* Compact desktop hero and footer clearance for the Q&A launcher. */
 @media(min-width:741px){.hero-art{height:auto}.hero{min-height:320px}.footer-links{padding-right:175px}}
+/* Accessibility: sufficient contrast for status badges */
+.soon-pill {
+  color: var(--text);
+}
