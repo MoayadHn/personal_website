@@ -1,4 +1,30 @@
 [
-  {"slug":"esp32-air-monitor","title":"ESP32 Air Monitor","category":"Hardware prototype","summary":"Environmental sensing, Home Assistant integration, and iterative enclosure design.","status":"Revisiting","skills":["ESP32","ESPHome","3D printing"]},
-  {"slug":"graph-retrieval-experiment","title":"Graph Retrieval Experiment","category":"Research experiment","summary":"Revisiting structured graph retrieval with LLM-assisted reasoning and testable answers.","status":"Planned","skills":["Neo4j","Python","LLMs"]}
+  {
+    "slug": "esp32-air-monitor",
+    "title": "ESP32 Air Monitor",
+    "category": "Hardware prototype",
+    "summary": "Environmental sensing, Home Assistant integration, and iterative enclosure design.",
+    "status": "Revisiting",
+    "skills": [
+      "ESP32",
+      "ESPHome",
+      "3D printing"
+    ],
+    "image": "assets/projects/esp32-air-monitor.svg",
+    "highlight": "ESPHome + sensors"
+  },
+  {
+    "slug": "graph-retrieval-experiment",
+    "title": "Graph Retrieval Experiment",
+    "category": "Research experiment",
+    "summary": "Revisiting structured graph retrieval with LLM-assisted reasoning and testable answers.",
+    "status": "Planned",
+    "skills": [
+      "Neo4j",
+      "Python",
+      "LLMs"
+    ],
+    "image": "assets/projects/graph-retrieval-experiment.svg",
+    "highlight": "Graph-based reasoning"
+  }
 ]

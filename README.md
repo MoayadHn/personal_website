@@ -1,37 +1,32 @@
-# almohaishi.dev — corrected static website
+# almohaishi.dev — Version 4
 
-This corrected package fixes the original missing CSS/image problem in local file previews. **Open `site/index.html` directly** to preview the homepage, light/dark theme, and internal pages. There is no npm build step.
+A focused, responsive portfolio with restrained light/dark design, animated code illustration, dynamic project catalogs, an About split-card silhouette, and a guided Q&A panel.
 
-## Cloudflare Pages connected to GitHub
+## Preview
+Open `site/index.html` directly, or serve `site` locally with `python3 -m http.server 8080` while working from within `site`.
 
-1. Add the entire repository (this folder's contents) to GitHub.
-2. Create a Cloudflare **Pages** project with Git integration, choose `main`.
-3. Framework preset: **None**. Build command: **leave empty**. Output directory: **`site`**.
-4. Deploy to the temporary `*.pages.dev` address first. Verify styles, illustration, navigation, and project cards.
-5. Add `almohaishi.dev` as the custom domain only after successful preview. Do not change Zoho MX or `prompt` Netlify CNAME records.
+## Deploy via GitHub + Cloudflare Pages
+1. Commit this folder to `moayadhn/personal-website` (or another repository). Do not add credentials.
+2. Create a new **Cloudflare Pages** project from GitHub, branch `main`.
+3. Framework: None; build command: blank; **output directory: `site`**; root directory: `/`.
+4. Inspect the `pages.dev` preview, then connect `almohaishi.dev`. Keep Zoho MX records and the Netlify `prompt` CNAME untouched.
 
-**Alternative manual preview:** `cd site && python3 -m http.server 8080` then open http://localhost:8080 . The source also works opened directly as local files.
-
-## Updating projects and lab
-
-Edit `site/data/projects.json` or `site/data/lab.json`, then run `python3 update_catalog.py` before committing. Both pages render the updated entries automatically and route to case-study **Coming soon** pages. The `demo` field can add an additional live demo link. Never publish secrets in JSON.
+## Adding a project
+Edit `site/data/projects.json` or `site/data/lab.json` and add an entry with fields `slug`, `title`, `category`, `summary`, `status`, `skills`, and optional `demo`, `date`, `updated`, and `image`.
+- Use a local image such as `assets/projects/storynest.svg`. Add the corresponding file under `site/assets/projects/`.
+- If no image is supplied, a default abstract software illustration is used.
+- Run **`python3 update_catalog.py`** to update the self-contained catalog for file previews and deployments.
+- Two most recent entries appear on the homepage automatically (based on date/updated, or catalog order if missing).
+- Project titles link to a Coming soon case-study page until dedicated case studies are written. Prompt Studio retains its live demo link.
 
 ## Blog
-
-Only add items to `site/data/posts.json` after **manual editorial and factual review**, with `reviewed: true`, `published: true` and `draft: false`; then run `python3 update_catalog.py`. Article-detail pages are not yet implemented and currently point to Coming soon. Do not publish AI draft content without review.
+`site/data/posts.json` contains only articles approved for publication. An article is visible only if `reviewed: true`, `published: true` and `draft` is not true. AI drafts must remain outside the public `site/` folder. No articles have been invented.
 
 ## Newsletter
+Currently displays **Coming soon** only; no addresses are collected. Integrate a double-opt-in mailing provider and publish appropriate privacy information before enabling signups.
 
-The newsletter card is explicitly **Coming soon** and accepts no addresses. Connect a newsletter provider with double opt-in, unsubscribe functionality and privacy policy before implementing a real form.
+## About Q&A panel
+The optional floating **Ask about my work** panel provides curated, rule-based responses drawn from public biography/project information. It is **not a generative AI chatbot**, makes no remote API calls, and collects no user messages. A true AI assistant would require a separately secured backend, approved knowledge content, rate limits, privacy disclosures and an LLM provider.
 
 ## Before public launch
-
-Add and verify legally appropriate Impressum and Datenschutzerklärung for your German-facing professional website. These are not included. Test mobile, verify all links, and provide genuine content before making public claims about projects or services.
-
-
-## Homepage highlights (v2)
-The three homepage cards automatically show up to two entries from `site/data/projects.json`, `site/data/lab.json`, and `site/data/posts.json`. Blog entries appear ONLY when `reviewed: true`, `published: true`, and `draft` is not true. When the blog is empty, the homepage shows a Coming Soon note.
-
-Add or edit entries in the JSON files, then run `python update_catalog.py` to regenerate `site/assets/catalog.js` (required for opening pages directly as local files; web-server mode also uses it). `date` or `updated` fields in ISO `YYYY-MM-DD` format control the ordering; without dates, catalog order is retained. The homepage keeps one explicit Contact me button, without a duplicate Contact navigation tab.
-
-The About page now uses the owner-provided silhouette photo at site/assets/silhouette.jpg, along with background information from the owner-supplied original About HTML. The image is displayed intentionally as a silhouette, not as an identifying portrait.
+Add and verify an Impressum and Datenschutzerklärung appropriate for the site's use in Germany. The source ZIP does not include legally reviewed notices. Check desktop/mobile layouts and the accessibility of navigation, image descriptions and interactive controls.

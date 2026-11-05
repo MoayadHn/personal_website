@@ -1,6 +1,58 @@
 [
-  {"slug":"prompt-studio","title":"Prompt Studio","category":"AI tools","summary":"A structured workspace for designing prompts for multiple AI models.","status":"Live demo","skills":["Prompt engineering","Web development"],"demo":"https://prompt.almohaishi.dev"},
-  {"slug":"storynest","title":"StoryNest","category":"Web application","summary":"A digital reading and publishing platform for children's stories.","status":"In development","skills":["Full-stack","AI workflows","Docker"]},
-  {"slug":"peopleflow","title":"PeopleFlow","category":"AI automation","summary":"An agent-assisted HR onboarding and workflow automation prototype.","status":"In development","skills":["n8n","AI agents","MCP"]},
-  {"slug":"knowledge-graph-lab","title":"Knowledge Graph Lab","category":"Research","summary":"Experiments connecting structured knowledge, Neo4j, and language models.","status":"Revisiting","skills":["Knowledge graphs","Neo4j","Python"]}
+  {
+    "slug": "prompt-studio",
+    "title": "Prompt Studio",
+    "category": "AI tools",
+    "summary": "A structured workspace for designing prompts for multiple AI models.",
+    "status": "Live demo",
+    "skills": [
+      "Prompt engineering",
+      "Web development"
+    ],
+    "demo": "https://prompt.almohaishi.dev",
+    "image": "assets/projects/prompt-studio.svg",
+    "highlight": "Prompt builder"
+  },
+  {
+    "slug": "storynest",
+    "title": "StoryNest",
+    "category": "Web application",
+    "summary": "A digital reading and publishing platform for children's stories.",
+    "status": "In development",
+    "skills": [
+      "Full-stack",
+      "AI workflows",
+      "Docker"
+    ],
+    "image": "assets/projects/storynest.svg",
+    "highlight": "Reading platform"
+  },
+  {
+    "slug": "peopleflow",
+    "title": "PeopleFlow",
+    "category": "AI automation",
+    "summary": "An agent-assisted HR onboarding and workflow automation prototype.",
+    "status": "In development",
+    "skills": [
+      "n8n",
+      "AI agents",
+      "MCP"
+    ],
+    "image": "assets/projects/peopleflow.svg",
+    "highlight": "HR agent workflows"
+  },
+  {
+    "slug": "knowledge-graph-lab",
+    "title": "Knowledge Graph Lab",
+    "category": "Research",
+    "summary": "Experiments connecting structured knowledge, Neo4j, and language models.",
+    "status": "Revisiting",
+    "skills": [
+      "Knowledge graphs",
+      "Neo4j",
+      "Python"
+    ],
+    "image": "assets/projects/knowledge-graph-lab.svg",
+    "highlight": "Neo4j + LLMs"
+  }
 ]
