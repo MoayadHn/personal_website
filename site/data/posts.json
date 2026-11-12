@@ -1,1 +1,28 @@
-[]
+[
+  {
+    "slug": "better-prompts",
+    "url": "blog/better-prompts/",
+    "title": "Better prompts, better outcomes",
+    "category": "Prompt engineering",
+    "summary": "A practical guide to clear instructions, examples, reasoning strategies, evaluation and Prompt Studio.",
+    "highlight": "Prompt Studio + best practices",
+    "date": "2026-11-12",
+    "readingTime": "6 min read",
+    "published": true,
+    "draft": false,
+    "reviewed": false
+  },
+  {
+    "slug": "agentic-workflows",
+    "url": "blog/agentic-workflows/",
+    "title": "From idea to insight: building agentic workflows with n8n",
+    "category": "AI automation",
+    "summary": "How to evaluate and summarize ideas using n8n, evidence-based agent workflows and human review.",
+    "highlight": "n8n + agentic AI",
+    "date": "2026-11-12",
+    "readingTime": "7 min read",
+    "published": true,
+    "draft": false,
+    "reviewed": false
+  }
+]
