@@ -5,11 +5,18 @@ A focused, responsive portfolio with restrained light/dark design, animated code
 ## Preview
 Open `site/index.html` directly, or serve `site` locally with `python3 -m http.server 8080` while working from within `site`.
 
-## Deploy via GitHub + Cloudflare Pages
-1. Commit this folder to `moayadhn/personal-website` (or another repository). Do not add credentials.
-2. Create a new **Cloudflare Pages** project from GitHub, branch `main`.
-3. Framework: None; build command: blank; **output directory: `site`**; root directory: `/`.
-4. Inspect the `pages.dev` preview, then connect `almohaishi.dev`. Keep Zoho MX records and the Netlify `prompt` CNAME untouched.
+## Deploy via GitHub + Cloudflare Workers Builds
+This repository is deployed using **Cloudflare Workers Builds** (Worker name `almohaishi-website`), not a Cloudflare Pages project. The plain HTML/CSS/JS source is served from `site/` through `wrangler.json`.
+
+Cloudflare dashboard → Workers & Pages → `almohaishi-website` → Settings → Build:
+1. Git production branch: `main`. Keep non-production branches as **Preview Builds**, not production.
+2. Root directory: repository root (`/` or blank).
+3. **Build command: blank** (this static site has no npm or framework build).
+4. Production deploy command: `npx wrangler deploy`.
+5. Preview command: `npx wrangler preview` (requires Worker Previews to be configured and enabled).
+6. Ensure the Worker has the correct custom domain and enabled preview host as appropriate. Inspect build logs in Cloudflare if the checks fail.
+
+The `wrangler.json` file defines the Worker name, `assets.directory = "./site"`, clean HTML paths, and `404.html` handling. Local testing: `npx wrangler dev` from the repository root. Preview builds should not replace the live `almohaishi.dev` production deployment. Keep Zoho MX records and the Netlify `prompt` CNAME untouched.
 
 ## Adding a project
 Edit `site/data/projects.json` or `site/data/lab.json` and add an entry with fields `slug`, `title`, `category`, `summary`, `status`, `skills`, and optional `demo`, `date`, `updated`, and `image`.
