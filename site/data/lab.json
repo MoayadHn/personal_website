@@ -1,5 +1,20 @@
 [
   {
+    "slug": "firefighter",
+    "title": "FireFighter",
+    "category": "Networking · IoT concept",
+    "summary": "Earlier first-responder monitoring prototype: sensor nodes relay O₂, heart-rate and GPS readings over UDP-style mesh communication to a server dashboard. ESP32 hardware integration is a possible future revisit.",
+    "status": "Revisit planned",
+    "skills": [
+      "C",
+      "UDP / MANET",
+      "Sensor networks"
+    ],
+    "repo": "https://github.com/MoayadHn/FireFighter",
+    "image": "assets/projects/firefighter.svg",
+    "highlight": "First-responder telemetry"
+  },
+  {
     "slug": "esp32-air-monitor",
     "title": "ESP32 Air Monitor",
     "category": "Hardware prototype",
