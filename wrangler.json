@@ -1,0 +1,10 @@
+{
+  "name": "almohaishi-website",
+  "compatibility_date": "2026-11-12",
+  "assets": {
+    "directory": "./site",
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "404-page"
+  },
+  "previews": {}
+}

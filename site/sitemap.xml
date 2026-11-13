@@ -1,1 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>https://almohaishi.dev/</loc></url><url><loc>https://almohaishi.dev/projects/</loc></url><url><loc>https://almohaishi.dev/lab/</loc></url><url><loc>https://almohaishi.dev/blog/</loc></url><url><loc>https://almohaishi.dev/about/</loc></url><url><loc>https://almohaishi.dev/contact/</loc></url></urlset>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://almohaishi.dev/</loc></url>
+  <url><loc>https://almohaishi.dev/projects/</loc></url>
+  <url><loc>https://almohaishi.dev/lab/</loc></url>
+  <url><loc>https://almohaishi.dev/blog/</loc></url>
+  <url><loc>https://almohaishi.dev/blog/better-prompts/</loc></url>
+  <url><loc>https://almohaishi.dev/blog/agentic-workflows/</loc></url>
+  <url><loc>https://almohaishi.dev/about/</loc></url>
+  <url><loc>https://almohaishi.dev/contact/</loc></url>
+  <url><loc>https://almohaishi.dev/privacy/</loc></url>
+  <url><loc>https://almohaishi.dev/impressum/</loc></url>
+</urlset>
